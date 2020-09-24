@@ -33,14 +33,14 @@ public class hw_1 {
         driver.findElement(By.name("q")).sendKeys("wiki");                  // search for "wiki"
         driver.findElement(By.name("btnK")).click();
         System.out.println(driver.getTitle());
-        String text = "wiki - Поиск в Google";
-        wait.until(titleIs(text));
+//        String text = "wiki - Поиск в Google";
+//        wait.until(titleIs(text));
 
 
         driver.navigate().to("https://en.wikipedia.org/wiki/Wiki");                // go to wikipedia.rg
         String text2 = "Wiki - Wikipedia";
-        wait.until(titleIs(text2));
-        System.out.println(driver.getTitle());
+//        wait.until(titleIs(text2));
+//        System.out.println(driver.getTitle());
 
         driver.navigate().back();                                                      // go back
 
@@ -49,13 +49,13 @@ public class hw_1 {
         driver.findElement(By.name("q")).sendKeys("oracle");               // search for "oracle"
         driver.findElement(By.className("Tg7LZd")).click();
         System.out.println(driver.getTitle());
-        String text3 = "oracle - Поиск в Google";
-        wait.until(titleIs(text3));
+//        String text3 = "oracle - Поиск в Google";
+//        wait.until(titleIs(text3));
 
         driver.navigate().to("https://www.oracle.com/ru/index.html");             // go to oracle.com
         System.out.println(driver.getTitle());
-        String text4 = "Oracle Россия и СНГ | Integrated Cloud Applications and Platform Services";
-        wait.until(titleIs(text4));
+//        String text4 = "Oracle Россия и СНГ | Integrated Cloud Applications and Platform Services";
+//        wait.until(titleIs(text4));
 
         driver.navigate().back();                                                     // go back
 
@@ -64,13 +64,13 @@ public class hw_1 {
         driver.findElement(By.name("q")).sendKeys("maps");                // search for "maps"
         driver.findElement(By.className("Tg7LZd")).click();
         System.out.println(driver.getTitle());
-        String text5 = "maps - Поиск в Google";
-        wait.until(titleIs(text5));
+//        String text5 = "maps - Поиск в Google";
+//        wait.until(titleIs(text5));
 
         driver.navigate().to("https://maps.google.ru/");                         // go to maps.google
         System.out.println(driver.getTitle());
-        String text6 = "Google Карты";
-        wait.until(titleIs(text6));
+//        String text6 = "Google Карты";
+//        wait.until(titleIs(text6));
 
         driver.navigate().back();
 
